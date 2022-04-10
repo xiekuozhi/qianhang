@@ -29,10 +29,12 @@ const render =()=>{
         $li.on('click',()=>{
             window.open(node.url)
         }) 
-        $li.on('click','close',(e)=>{
-            console.log('这里')  
+        $li.on('click','.close',(e)=>{
             e.stopPropagation() 
+            hashMap.splice(index,1)
+            render()
         })
+        
     })
 }
 render()
@@ -56,3 +58,12 @@ $('.addButton')
        localStorage.setItem('x',string)
        
     }
+
+    $(document).on('keypress',(e)=>{
+        const {key}=e
+        for(let i=0;i<hashMap.length;i++){
+            if(hasMap[i].logo.toLowercase()===key){/*toLowercase小写的意思*/
+            window.open(hashMap[i].url)   
+            }
+         }
+    })
