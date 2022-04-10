@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前航</title>
+    <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="globalHeader">
+        <form class="searchForm" method="get" action="https://www.baidu.com/s"> <!-- 添加搜索栏的链接到百度-->
+        <input name="wd" type="text">                                           <!-- 加上name="wd"-->
+        <button type="submit">搜索</button>                                      <!-- 加上type="submit"-->
+        </form>
+    </header>
+
+    <main class="globalMain">
+        <ul class="siteList">
+            <li class="last">
+                <div class="addButton">
+                   <div class="icon-Wrapper">
+                   <svg class="icon" >
+                    <use xlink:href="#icon-add-fill"></use>
+                    </svg>
+                    </div>
+                   <div class="text">新增网站</div>
+                </div>
+            </li>
+        </ul>
+
+    </main>
+
+    <script src="//at.alicdn.com/t/font_3309904_ol1ji60x99q.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+</html>
